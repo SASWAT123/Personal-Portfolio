@@ -1,0 +1,1 @@
+This is a personal portfolio project developed using ReactJS. I am using Material design concepts in this project along with mobile responsive design. It is a good project for anyone who wants to understand how the react works with material design components. You can clone it and customise this to make it your own. I am using type writer effect to make it much more attractive.
