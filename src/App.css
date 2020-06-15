@@ -59,8 +59,8 @@ html {
 }
 
 .timeline i {
-  font-size: 2em;
-  padding: 8px;
+  font-size: 1.8em;
+  padding: 10px;
 }
 
 /* Custom Styles */
@@ -91,62 +91,6 @@ html {
   height: 2.65rem;
 }
 
-.resume_page {
-  background: #ededed;
-  min-height: 90vh;
-  padding: 0.5rem 1rem;
-}
-
-.left_pane {
-  padding: 1em;
-  border: solid black 1px;
-}
-
-.right_pane {
-  padding: 1em;
-  border: solid black 1px;
-}
-
-.profile_image {
-  height: 30vh;
-  width: 100%;
-  padding: 1em 2em;
-  border-radius: 50%;
-  transform: rotate(270deg);
-}
-
-.user_name {
-  padding: 0.5em;
-}
-
-.basic_details {
-  padding-left: 0.5em;
-}
-
-.contact_icons {
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-}
-
-.contact_icons i {
-  font-size: 1.5em;
-  padding-right: 20px;
-  justify-content: center;
-}
-
-.contact_details {
-  padding-bottom: 0.5em;
-}
-
-.skills {
-  padding-left: 0.5em;
-  padding-top: 1em;
-}
-
-.about_me_details {
-  border-bottom: solid black 1px;
-}
-
 .project_Cards {
   padding: 2em;
 }
@@ -163,15 +107,6 @@ html {
 .card_text {
   justify-content: center;
   font-size: medium;
-}
-
-@media only screen and (max-width: 736px) {
-  .personal_info {
-    height: 38vh;
-  }
-  .profile_image {
-    height: 38vh;
-  }
 }
 
 #home {
@@ -301,6 +236,7 @@ html {
   }
 
   .section__subtitle--about {
+    background: var(--clr-light);
     padding-top: 15px;
     font-size: 30px;
     grid-column: 1 / -1;
@@ -316,7 +252,7 @@ html {
     grid-area: img;
     position: relative;
     min-width: 350px;
-    z-index: 2;
+    z-index: 3;
   }
 }
 
@@ -326,8 +262,17 @@ html {
     padding-bottom: 10px;
     font-size: 20px;
   }
+
+  .timeline i {
+    font-size: 1.5em;
+    padding: 8px;
+  }
 }
 
-.verticalTimeline {
+.about {
   background: var(--clr-accent);
+}
+
+p {
+  text-align: justify;
 }

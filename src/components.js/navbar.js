@@ -19,7 +19,7 @@ const NavigationBar = () => {
     <div>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">
-          <strong>{`<Dev Saswat />`}</strong>
+          <strong>{`<Dev SP />`}</strong>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

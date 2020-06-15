@@ -8,6 +8,8 @@ import slack_clone from "../assets/slack_clone.png";
 import microservices from "../assets/microservices.png";
 import url_shortner from "../assets/URL-shortener.png";
 import Dialogflow from "../assets/Dialogflow.png";
+import employee from "../assets/employee.png";
+import springsecurity from "../assets/springsecurity.jpg";
 import { Row, Col } from "reactstrap";
 
 class Projects extends Component {
@@ -27,7 +29,7 @@ class Projects extends Component {
         technology: "ReactJs",
         description:
           "This is a react project that showcase my portfolio. I have used material design components to develop this. It is mobile friendly, lightweight and follows responsive UI design principles.",
-        link: "https://github.com/SASWAT123/Portfolio",
+        link: "https://github.com/SASWAT123/Personal-Portfolio",
         src: portfolio,
       },
       {
@@ -61,6 +63,7 @@ class Projects extends Component {
         description:
           "This is a full stack web application that is developed using Angular 2, Springboot and MongoDb as part of my full stack bootcamp. This performs all the basic CRUD operations.",
         link: "https://github.com/SASWAT123/Full-Stack-Project",
+        src: employee,
       },
       {
         title: "URL Shortner",
@@ -85,6 +88,14 @@ class Projects extends Component {
           "This is a simple application demonstrating the implementation of microservices with Eureka. I am implemenitng Eureka service discovery and registry along with Hysterix for fault tolerance. ",
         link: "https://github.com/SASWAT123/Microservices-Architecture",
         src: microservices,
+      },
+      {
+        title: "Spring Security",
+        technology: "Springboot + JWT token + MYSQL",
+        description:
+          "This is a springboot application implementing spring security with JWT tokens to protect your rest end points. Only the authenticated users can access the protected APIs and manipulate the data.",
+        link: "https://github.com/SASWAT123/React-SpringBoot-JWT-JPA-MYSQL",
+        src: springsecurity,
       },
     ];
   }
@@ -122,6 +133,11 @@ class Projects extends Component {
           </Col>
           <Col xs="12" sm="6" md="4" lg="4">
             <CardView cardDetails={this.state[5]} />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" sm="6" md="4" lg="4">
+            <CardView cardDetails={this.state[9]} />
           </Col>
         </Row>
       </div>

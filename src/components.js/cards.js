@@ -37,7 +37,7 @@ const CardView = (props) => {
             href={props.cardDetails.link}
             style={{ color: "black" }}
           >
-            <i class="fa fa-github" aria-hidden="true">
+            <i className="fa fa-github" aria-hidden="true">
               {" "}
               Source Code
             </i>
