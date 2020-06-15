@@ -58,6 +58,11 @@ html {
   font-size: 2.5em;
 }
 
+.timeline i {
+  font-size: 2em;
+  padding: 8px;
+}
+
 /* Custom Styles */
 
 .icons-social i {
@@ -258,4 +263,71 @@ html {
 
 .card {
   border: solid 2px gray;
+}
+
+.about_me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+.section__subtitle--about {
+  background: var(--clr-accent);
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    margin: 0 8em;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    padding-top: 15px;
+    font-size: 30px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 7em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    min-width: 350px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 430px) {
+  .section__subtitle--about {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.verticalTimeline {
+  background: var(--clr-accent);
 }
